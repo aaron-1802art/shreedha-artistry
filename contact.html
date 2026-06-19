@@ -16,12 +16,14 @@
     <script src="js/main.js" defer></script>
 </head>
 <body>
+    <!-- Announcement Bar -->
     <div class="announcement-bar">
         <div class="announcement-text">
             Bringing Devotional Culture to Canada &bull; Free Shipping Across CA & US on Orders Over $108 | Hare Krishna 🌸
         </div>
     </div>
 
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
@@ -37,66 +39,144 @@
         </div>
     </nav>
 
-    <section class="section">
-        <div class="container">
-            <div class="text-page">
-                <h1 class="h2" style="text-align: center;">Connect with Our Devotional Care Team</h1>
-                <p class="body-large" style="text-align: center; margin-bottom: 3rem;">
-                    Hare Krishna! We would love to hear from you. Whether you have detailed inquiries regarding the materials of our Gopi dresses, need help tracking your sacred parcels, require custom ordering for temple festivals, or simply want to share your spiritual journey with us, our team is here to serve you with love and devotion.
-                </p>
+    <!-- Hero Section -->
+    <header class="page-hero">
+        <svg class="page-hero-bg-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 0 C60 40 90 40 100 50 C90 60 60 60 50 100 C40 60 10 60 0 50 C10 40 40 40 50 0 Z" fill="#8C764D"/>
+            <circle cx="50" cy="50" r="25" fill="none" stroke="#8C764D" stroke-width="0.5"/>
+            <circle cx="50" cy="50" r="15" fill="none" stroke="#8C764D" stroke-width="0.5"/>
+            <circle cx="50" cy="50" r="5" fill="#8C764D"/>
+        </svg>
+        <div class="container fade-in">
+            <span class="badge-pill">✦ We'd Love to Hear From You ✦</span>
+            <h1>Connect with Our Devotional Care Team</h1>
+            <div class="subtitle">Hare Krishna! Reach out — we serve with love.</div>
+            <div class="divider-gold">
+                <div class="divider-gold-diamond"></div>
+            </div>
+        </div>
+    </header>
 
-                <div class="story-grid" style="gap: 2rem;">
-                    <div class="contact-info">
-                        <h3 class="h3 text-primary">How to Reach Us</h3>
-                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1.5rem;">
-                            <li>
-                                <strong>Email Support:</strong><br>
-                                <a href="mailto:support@shreedhaartistry.com" class="text-secondary">support@shreedhaartistry.com</a><br>
-                                <span style="font-size: 0.9rem; color: #666;">(We respond within 24 business hours)</span>
-                            </li>
-                            <li>
-                                <strong>Mailing Address & Distribution Center:</strong><br>
-                                Shreedha Artistry, Toronto, Ontario, Canada
-                            </li>
-                            <li>
-                                <strong>Hours of Spiritual Service:</strong><br>
-                                Monday – Friday: 9:00 AM – 5:00 PM EST<br>
-                                <span style="font-size: 0.9rem; color: #666; font-style: italic;">(Closed on major Ekadashi and Vaishnava Festival days to allow our staff to focus completely on sadhana).</span>
-                            </li>
-                        </ul>
+    <!-- Contact Section -->
+    <section class="section" style="background-color: var(--bg-cream); padding-top: 0;">
+        <div class="container fade-in delay-1">
+            <div class="contact-layout">
+                
+                <!-- Left Column: Info Cards -->
+                <div class="contact-info-stack">
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <span class="icon">📧</span>
+                            <h3>Email Support</h3>
+                        </div>
+                        <p><a href="mailto:support@shreedhaartistry.com" class="text-primary">support@shreedhaartistry.com</a></p>
+                        <p class="info-note">We respond within 24 business hours</p>
                     </div>
 
-                    <div class="contact-form-container">
-                        <h3 class="h3 text-primary">Send Us a Message Directly</h3>
-                        <form class="contact-form" onsubmit="event.preventDefault();">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" required class="form-input">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" required class="form-input">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" class="form-input">
-                            </div>
-                            <div class="form-group">
-                                <label for="order">Order Number (Optional)</label>
-                                <input type="text" id="order" class="form-input">
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" rows="5" required class="form-input"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send Devotional Inquiry</button>
-                        </form>
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <span class="icon">📍</span>
+                            <h3>Location</h3>
+                        </div>
+                        <p><strong>Shreedha Artistry</strong></p>
+                        <p>Delhi, India</p>
+                        <p class="info-note">Distribution hub serving global</p>
                     </div>
+
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <span class="icon">🕐</span>
+                            <h3>Hours of Service</h3>
+                        </div>
+                        <p>Monday – Friday: 9:00 AM – 5:00 PM EST</p>
+                        <p class="info-note">Closed on major Ekadashi and Vaishnava Festival days so our team can fully observe sadhana.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <span class="icon">🌐</span>
+                            <h3>Social & Community</h3>
+                        </div>
+                        <p>Follow our devotional journey</p>
+                        <p style="margin-top: 0.5rem;">
+                            <a href="#" class="text-secondary" style="margin-right: 1rem;">Instagram</a>
+                            <a href="#" class="text-secondary" style="margin-right: 1rem;">Facebook</a>
+                            <a href="#" class="text-secondary">YouTube</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Contact Form -->
+                <div class="contact-form-container">
+                    <h2 class="h2" style="margin-bottom: 0.5rem; text-align: center;">Send Us a Message</h2>
+                    <div class="divider-gold" style="margin: 1rem auto 2rem;">
+                        <div class="divider-gold-diamond"></div>
+                    </div>
+                    
+                    <form class="contact-form" onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="order">Order Number <span style="font-weight: normal; color: #888;">(Optional)</span></label>
+                            <input type="text" id="order" class="form-input" placeholder="e.g. SA-108">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required class="form-input"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send Devotional Inquiry &rarr;</button>
+                        <p style="text-align: center; margin-top: 1rem; font-style: italic; color: var(--secondary); font-size: 0.9rem;">
+                            Hare Krishna 🌸 We'll respond with care within 24 hours.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Strip -->
+    <section class="faq-section">
+        <div class="container fade-in">
+            <span class="eyebrow" style="text-align: center; display: block;">FAQ</span>
+            <h2 class="h2" style="text-align: center; margin-bottom: 3rem;">Common Questions</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <h4>Do you ship internationally?</h4>
+                    <p>Yes! We ship worldwide to support the global ISKCON sangha. International delivery takes 10–21 business days.</p>
+                </div>
+                <div class="faq-card">
+                    <h4>What is your return policy?</h4>
+                    <p>We offer a 30-day return window for unworn apparel and unused accessories in original packaging.</p>
+                </div>
+                <div class="faq-card">
+                    <h4>Can I place a custom temple order?</h4>
+                    <p>Absolutely. Contact us directly at <a href="mailto:support@shreedhaartistry.com" class="text-primary">support@shreedhaartistry.com</a> with your festival requirements and quantities.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Closing Quote Banner -->
+    <section class="closing-banner">
+        <div class="container fade-in">
+            <h2>"Every message we receive is a blessing. We are here to serve you."</h2>
+            <div class="banner-attribution">&mdash; The Shreedha Artistry Team</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
