@@ -708,3 +708,70 @@ ul {
     text-align: center;
     font-size: 0.8rem;
 }
+
+/* Additional Styles for Subpages */
+.text-page {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 4rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+.text-page h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary);
+    text-align: center;
+}
+.text-page h3 {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+.text-page p {
+    margin-bottom: 1.5rem;
+    color: #4a4a4a;
+    line-height: 1.8;
+}
+.text-page ul {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+    list-style-type: disc;
+    color: #4a4a4a;
+}
+.text-page ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Form Styles */
+.contact-form-container {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+.form-input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid rgba(140, 118, 77, 0.3);
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    background-color: var(--bg-card);
+}
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(177, 46, 51, 0.1);
+}
