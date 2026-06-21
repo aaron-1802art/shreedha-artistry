@@ -11,7 +11,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -22,9 +22,9 @@
 </head>
 <body>
 
-    <!-- TOP BAR -->
+    <!-- TOP ANNOUNCEMENT BAR -->
     <div class="top-bar">
-        ✦ HANDCRAFTED IN MAYAPUR ✦ SACRED ITEMS FOR YOUR SPIRITUAL JOURNEY ✦ AUTHENTIC TULASI & DEITY ITEMS ✦ MADE WITH DEVOTION ✦ FREE SHIPPING ✦
+        Handcrafted devotional artistry from Vrindavan
     </div>
 
     <!-- MAIN HEADER -->
@@ -94,17 +94,12 @@
         </div>
         
         <div class="hero-panel center-panel">
-            <div class="center-content">
-                <span class="hero-pill">✦ Authentic Devotional Items</span>
-                <h1 class="hero-title">Sacred Vaishnava<br>Goods</h1>
-                <h2 class="hero-subtitle">We believe in quality & devotion</h2>
-                <p class="hero-desc">
-                    Japa bags, Gopi dresses, Deities, Kurtas, Malas and more —<br>crafted to bring Vrindavan right to your door.
-                </p>
-                <div class="hero-ctas">
-                    <button class="btn-filled" onclick="location.href='shop.html'">Shop Now →</button>
-                    <button class="btn-outline" onclick="location.href='about.html'">Our Story</button>
-                </div>
+            <div class="hero-tag">SHREEDHA ARTISTRY</div>
+            <h1 class="hero-title">Sacred Offerings<br>Rooted in Vrindavan.</h1>
+            <p class="hero-subtitle">Handcrafted devotional wear, sacred accessories, and spiritual artistry made to bring beauty, serenity, and devotion into everyday life.</p>
+            <div class="hero-cta-group">
+                <button class="hero-btn primary-btn" onclick="location.href='shop.html'">Shop Collection</button>
+                <button class="hero-btn secondary-btn" onclick="location.href='about.html'">Our Story</button>
             </div>
         </div>
 
@@ -122,8 +117,17 @@
         </div>
     </section>
 
+    <!-- TRUST STRIP -->
+    <div class="hero-trust-strip" style="background: var(--ivory-soft); padding: 15px 0; border-bottom: 1px solid var(--border); text-align: center; font-family: var(--font-body); font-size: 13px; color: var(--gray-500); letter-spacing: 1px; text-transform: uppercase;">
+        Handcrafted in Devotion &nbsp; • &nbsp; Inspired by Vrindavan &nbsp; • &nbsp; Premium Sacred Craftsmanship &nbsp; • &nbsp; Worldwide Shipping
+    </div>
+
     <!-- CATEGORY GRID -->
     <section class="home-categories">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2 style="font-family: var(--font-title); font-size: 2.5rem; color: var(--dark); margin-bottom: 10px;">Made with Devotion</h2>
+            <p style="color: var(--gray-500); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">Authentic handcrafted devotional pieces — from sacred wear and malas to artisan accessories — created to support your bhakti, seva, and daily spiritual life.</p>
+        </div>
         <div class="cat-grid">
             <div class="cat-grid-item" onclick="location.href='shop.html'">
                 <img src="assets/products/mridanga_drum_1782017270307.png" alt="Toys">
@@ -172,6 +176,28 @@
             <div class="cat-grid-item" onclick="location.href='shop.html'">
                 <img src="assets/products/mridanga_drum_1782017270307.png" alt="Musical">
                 <div class="cat-grid-title">Musical</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST SECTION / WHY US -->
+    <section class="trust-section" style="padding: 100px 20px; background: var(--ivory-soft); border-top: 1px solid var(--border);">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <h2 style="font-family: var(--font-title); font-size: 2.8rem; color: var(--burgundy); margin-bottom: 15px;">Why Shreedha Artistry</h2>
+            <p style="color: var(--gray-600); max-width: 650px; margin: 0 auto; font-size: 1.15rem; line-height: 1.8;">Shreedha Artistry was created to bring the grace of devotional craftsmanship into everyday spiritual life — through sacred wear, artisan offerings, and pieces made with reverence, beauty, and bhakti.</p>
+        </div>
+        <div style="display: flex; gap: 40px; max-width: 1100px; margin: 0 auto; text-align: center; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 280px; padding: 40px; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-sm); transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='none'">
+                <h3 style="font-family: var(--font-title); font-size: 1.6rem; color: var(--maroon); margin-bottom: 15px;">Handcrafted with Devotion</h3>
+                <p style="color: var(--gray-500); font-size: 1rem; line-height: 1.6;">Each piece is meticulously created by artisans who pour their heart and devotion into the craft.</p>
+            </div>
+            <div style="flex: 1; min-width: 280px; padding: 40px; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-sm); transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='none'">
+                <h3 style="font-family: var(--font-title); font-size: 1.6rem; color: var(--maroon); margin-bottom: 15px;">Inspired by Vrindavan</h3>
+                <p style="color: var(--gray-500); font-size: 1rem; line-height: 1.6;">Our designs draw deeply from the sacred heritage, colors, and textures of Vrindavan traditions.</p>
+            </div>
+            <div style="flex: 1; min-width: 280px; padding: 40px; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-sm); transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='none'">
+                <h3 style="font-family: var(--font-title); font-size: 1.6rem; color: var(--maroon); margin-bottom: 15px;">Premium Sacred Quality</h3>
+                <p style="color: var(--gray-500); font-size: 1rem; line-height: 1.6;">We use only the finest materials to ensure your spiritual essentials last a lifetime.</p>
             </div>
         </div>
     </section>
