@@ -301,7 +301,7 @@
                         const badge = p.badge ? `<span class="card-badge ${p.badge === 'SALE' ? 'sale' : 'new'}">${p.badge}</span>` : '';
                         const oldP = p.oldPrice ? `<span class="price-was">$${p.oldPrice.toFixed(2)}</span>` : '';
                         return `
-                    <div class="product-card">
+                    <div class="product-card" onclick="window.open('product.html?id=${p.id}', '_blank')">
                         <div class="card-image">
                             ${badge}
                             <button class="card-wish" onclick="toggleWish(this)">♡</button>

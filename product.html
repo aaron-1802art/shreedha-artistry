@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreedha Artistry | Unique Vaishnava Goods</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Authentically sourced Japa bags, elegant Gopi dresses, traditional kurtas, and sacred treasures.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hero.css">
+    
+    <!-- Custom JS -->
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="top-bar">
+        Handcrafted devotional artistry from Vrindavan
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="header-logo">
+                Shreedha Artistry
+                <small>Connecting Hearts, Preserving Traditions</small>
+            </a>
+            
+            <div class="search-bar">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Search for products">
+            </div>
+
+            <div class="header-actions">
+                <button class="header-icon">⇄</button>
+                <button class="header-icon">♡</button>
+                <button class="header-icon" style="border-radius: 20px; width: auto; padding: 0 15px; font-size:14px; gap:8px;">
+                    👤 Login / Register
+                </button>
+                <button class="header-icon header-cart" style="width:auto; padding: 0 15px; border-radius:20px; gap:8px;">
+                    🛒 $0.00
+                </button>
+                <button class="mobile-menu-btn">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECONDARY NAV -->
+    <nav class="secondary-nav">
+        <button class="browse-btn" onclick="location.href='shop.html'">
+            ☰ Browse Categories ⌄
+        </button>
+        <div class="secondary-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Live Chat</a>
+        </div>
+    </nav>
+
+        
+    <!-- PRODUCT SHOWCASE CSS -->
+    <style>
+        .product-page-wrapper {
+            background: var(--ivory-soft);
+            padding: 60px 40px 100px;
+            min-height: 80vh;
+        }
+        .product-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 60px;
+            background: var(--white);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+            border: 1px solid var(--border);
+        }
+        
+        /* Left: Gallery */
+        .product-gallery {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .main-image-container {
+            width: 100%;
+            height: 550px;
+            border-radius: 16px;
+            overflow: hidden;
+            background: var(--ivory);
+            border: 1px solid var(--border);
+        }
+        .main-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .thumbnail-row {
+            display: flex;
+            gap: 16px;
+        }
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            border-radius: 12px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .thumbnail:hover, .thumbnail.active {
+            border-color: var(--burgundy);
+        }
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Right: Details */
+        .product-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .breadcrumbs {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gray-500);
+            margin-bottom: 20px;
+        }
+        .product-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 42px;
+            color: var(--maroon);
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+        .stars { color: var(--gold); font-size: 18px; letter-spacing: 2px; }
+        .reviews-count { font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--gray-500); }
+        
+        .product-price {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 36px;
+            color: var(--burgundy);
+            font-weight: 600;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .currency-badge {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            background: var(--ivory-soft);
+            color: var(--maroon);
+            padding: 4px 10px;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            vertical-align: middle;
+        }
+        
+        .product-description {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 16px;
+            color: var(--gray-600);
+            line-height: 1.8;
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .actions-row {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+        .qty-picker {
+            display: flex;
+            align-items: center;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--ivory-soft);
+            height: 54px;
+            padding: 0 16px;
+        }
+        .qty-picker button {
+            background: transparent;
+            border: none;
+            font-size: 20px;
+            color: var(--maroon);
+            cursor: pointer;
+            padding: 0 10px;
+        }
+        .qty-picker input {
+            width: 40px;
+            text-align: center;
+            background: transparent;
+            border: none;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        .add-to-cart-btn {
+            flex: 1;
+            background: var(--burgundy);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .add-to-cart-btn:hover {
+            background: var(--maroon);
+        }
+        
+        .features-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            color: var(--gray-600);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .features-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        /* Not found state */
+        .not-found {
+            text-align: center;
+            padding: 100px 20px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 32px;
+            color: var(--maroon);
+        }
+
+        @media (max-width: 992px) {
+            .product-container { flex-direction: column; }
+            .main-image-container { height: 400px; }
+        }
+    </style>
+
+    <main class="product-page-wrapper">
+        <div id="productContainer" class="product-container" style="display:none;">
+            
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img id="mainImage" src="" alt="Product Image">
+                </div>
+                <div class="thumbnail-row" id="thumbnailRow">
+                    <!-- Thumbnails injected via JS -->
+                </div>
+            </div>
+
+            <div class="product-details">
+                <div class="breadcrumbs">
+                    Home / <span id="breadCat">Category</span> / <span id="breadName">Product</span>
+                </div>
+                
+                <h1 class="product-title" id="prodTitle">Product Title</h1>
+                
+                <div class="product-rating">
+                    <div class="stars">★★★★★</div>
+                    <div class="reviews-count" id="prodReviews">5.0 (0 reviews)</div>
+                </div>
+                
+                <div class="product-price">
+                    <span id="prodPrice">₹0</span>
+                    <span class="currency-badge">INR</span>
+                </div>
+                
+                <div class="product-description">
+                    Handcrafted with devotion, this premium piece is designed to elevate your daily spiritual practice. Made with authentic materials sourced directly from the sacred land of Vrindavan.
+                </div>
+                
+                <div class="actions-row">
+                    <div class="qty-picker">
+                        <button onclick="document.getElementById('qty').value = Math.max(1, parseInt(document.getElementById('qty').value) - 1)">-</button>
+                        <input type="number" id="qty" value="1" min="1">
+                        <button onclick="document.getElementById('qty').value = parseInt(document.getElementById('qty').value) + 1">+</button>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="alert('Added to Cart!')">ADD TO CART &rarr;</button>
+                </div>
+                
+                <ul class="features-list">
+                    <li>✦ Authentic materials</li>
+                    <li>✦ Spiritually handled and packed</li>
+                    <li>✦ Ships securely worldwide</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div id="notFoundMsg" class="not-found" style="display:none;">
+            Product not found.<br>
+            <a href="shop.html" style="font-size:18px; color:var(--burgundy); text-decoration:underline; font-family:'DM Sans', sans-serif;">Return to Shop</a>
+        </div>
+    </main>
+
+    <script>
+        const products = [
+            { id:1,  name:"Premium Ahimsa Silk Embroidered Japa Bag", cat:"Japa Bags", img: "assets/products/japa_bag_1782017108810.png", price:38, stars:4.9, reviews:87 },
+            { id:2,  name:"Hand-Embroidered Cotton Japa Bag – Peacock Design", cat:"Japa Bags", img: "assets/products/japa_bag_1782017108810.png", price:28, stars:4.7, reviews:203 },
+            { id:3,  name:"Vrindavan Gopi Dress – Royal Blue with Gold Border", cat:"Gopi Dresses", img: "assets/products/gopi_dress_1782017122827.png", price:65, stars:4.8, reviews:54 },
+            { id:4,  name:"Traditional Gopi Dress – Soft Pink Cotton", cat:"Gopi Dresses", img: "assets/products/gopi_dress_1782017122827.png", price:55, stars:4.6, reviews:112 },
+            { id:5,  name:"Premium Khadi Cotton Kurta – Saffron", cat:"Kurtas", img: "assets/products/kurta_saffron_1782017136227.png", price:48, stars:4.8, reviews:176 },
+            { id:6,  name:"Pure Silk Kurta – Cream & Gold Border", cat:"Kurtas", img: "assets/products/kurta_saffron_1782017136227.png", price:72, stars:4.9, reviews:38 },
+            { id:7,  name:"Sri Sri Radha Krishna Deity – 6 Inch Brass", cat:"Altar & Deities", img: "assets/products/deity_brass_1782017148885.png", price:145, stars:5.0, reviews:29 },
+            { id:8,  name:"Tulsi Kanthimala – 3 Round, 108 Beads", cat:"Kanthimala", img: "assets/products/tulsi_mala_1782017179378.png", price:22, stars:4.9, reviews:312 },
+            { id:9,  name:"Bhagavad Gita As It Is – Hardcover (Prabhupada)", cat:"Spiritual Books", img: "assets/products/bhagavad_gita_1782017191650.png", price:32, stars:5.0, reviews:891 },
+            { id:10, name:"Nectar of Devotion – Bhakti Rasamrta Sindhu", cat:"Spiritual Books", img: "assets/products/bhagavad_gita_1782017191650.png", price:28, stars:4.9, reviews:445 },
+            { id:11, name:"Narasimha Kavacha Pendant – Panchaloha", cat:"Pendants", img: "assets/products/pendant_gold_1782017204819.png", price:38, stars:4.8, reviews:67 },
+            { id:12, name:"Silver Tilak Pendant with Radhe Inscription", cat:"Pendants", img: "assets/products/pendant_gold_1782017204819.png", price:55, stars:4.7, reviews:93 },
+            { id:13, name:"Brass Puja Thali Set – 7 Piece", cat:"Altar & Deities", img: "assets/products/puja_thali_1782017217737.png", price:85, stars:4.8, reviews:41 },
+            { id:14, name:"Pure Tulsi Japa Mala – 108 Beads with Bag", cat:"Japa Bags", img: "assets/products/tulsi_mala_1782017179378.png", price:24, stars:4.9, reviews:156 },
+            { id:15, name:"Devotional Saree – Cream with Temple Border", cat:"Saree", img: "assets/products/saree_cream_1782017257764.png", price:92, stars:4.7, reviews:28 },
+            { id:16, name:"Mridanga Drum – Professional Grade", cat:"Musical", img: "assets/products/mridanga_drum_1782017270307.png", price:220, stars:5.0, reviews:15 }
+        ];
+
+        // 1 CAD approx = 60 INR
+        const CAD_TO_INR = 60;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const idParam = urlParams.get('id');
+            const productId = parseInt(idParam, 10);
+
+            const product = products.find(p => p.id === productId);
+
+            if (product) {
+                document.getElementById('productContainer').style.display = 'flex';
+                
+                document.getElementById('mainImage').src = product.img;
+                document.getElementById('breadCat').innerText = product.cat;
+                document.getElementById('breadName').innerText = product.name;
+                document.getElementById('prodTitle').innerText = product.name;
+                document.getElementById('prodReviews').innerText = `${product.stars} (${product.reviews} reviews)`;
+                
+                // Convert to INR
+                const priceInINR = product.price * CAD_TO_INR;
+                // Format with Indian commas
+                document.getElementById('prodPrice').innerText = '₹' + priceInINR.toLocaleString('en-IN');
+                
+                // Create dummy thumbnails out of the main image
+                const thumbRow = document.getElementById('thumbnailRow');
+                for(let i=0; i<3; i++) {
+                    const thumb = document.createElement('div');
+                    thumb.className = i === 0 ? 'thumbnail active' : 'thumbnail';
+                    thumb.innerHTML = `<img src="${product.img}" alt="Thumb">`;
+                    thumbRow.appendChild(thumb);
+                }
+
+            } else {
+                document.getElementById('notFoundMsg').style.display = 'block';
+            }
+        });
+    </script>
+<!-- FOOTER -->
+    <footer class="dark-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Useful links</h4>
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact us</a>
+                <a href="terms.html">Terms and Conditions</a>
+                <a href="refund.html">Cancellation and Refund</a>
+                <a href="shipping.html">Shipping and Delivery</a>
+                <a href="privacy.html">Shipping policy</a>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <a href="shop.html">Accessories</a>
+                <a href="shop.html">Art & Collectibles</a>
+                <a href="shop.html">Baby</a>
+                <a href="shop.html">Bags & Purses</a>
+                <a href="shop.html">Bath & Beauty</a>
+                <a href="shop.html">Books, Films & Music</a>
+            </div>
+            <div class="footer-col">
+                <h4>&nbsp;</h4>
+                <a href="shop.html">Clothing</a>
+                <a href="shop.html">Craft Supplies & Tools</a>
+                <a href="shop.html">Electronics & Accessories</a>
+                <a href="shop.html">Home & Living</a>
+                <a href="shop.html">Jewellery</a>
+                <a href="shop.html">FAQ</a>
+            </div>
+            <div class="footer-col" style="display:flex; align-items:flex-end;">
+                <select style="width:100%; padding:10px; border-radius:4px; font-family:var(--font-body);">
+                    <option>CAD</option>
+                    <option>USD</option>
+                    <option>INR</option>
+                </select>
+            </div>
+        </div>
+        <div class="footer-bottom-dark">
+            We use cookies to improve your experience on our website. By browsing this site, you agree to our use of cookies.
+        </div>
+    </footer>
+
+</body>
+</html>
