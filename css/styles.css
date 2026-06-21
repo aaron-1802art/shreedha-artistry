@@ -1031,3 +1031,11 @@
     background: var(--ivory-soft);
     color: var(--maroon);
 }
+
+/* Brand Logo */
+.brand-logo {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 15px;
+}
