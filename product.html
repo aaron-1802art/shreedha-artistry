@@ -86,9 +86,15 @@
             padding: 40px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.04);
             border: 1px solid var(--border);
+            opacity: 0;
+            animation: fadeUpIn 0.8s ease 0.2s forwards;
         }
         
         /* Left: Gallery */
+        @keyframes fadeUpIn {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
         .product-gallery {
             flex: 1;
             display: flex;
