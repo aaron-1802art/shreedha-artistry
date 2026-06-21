@@ -267,31 +267,31 @@
         @media (max-width: 576px) { .product-grid-new { grid-template-columns: 1fr; } .featured-showcase { padding: 60px 20px; } }
 
         /* 2. WHY SHREEDHA SECTION */
-        .why-section { background: #1C0A0A; padding: 90px 60px; position: relative; overflow: hidden; }
+        .why-section { background: var(--ivory-soft); padding: 90px 60px; position: relative; overflow: hidden; border-top: 1px solid var(--border); }
         .why-mandala-bg { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 700px; height: 700px; opacity: 0.03; pointer-events: none; z-index: 0; }
         .why-content { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; }
         
         .why-header { text-align: center; }
         .why-eyebrow { font-family: 'DM Sans', sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #8C764D; }
-        .why-h2 { font-family: 'Cormorant Garamond', serif; font-size: 48px; color: #FDF6EC; margin-top: 10px; margin-bottom: 0; }
-        .why-h2 span { font-style: italic; color: #E8A000; }
-        .why-subtitle { font-family: 'DM Sans', sans-serif; font-size: 15px; color: #8A7A6A; line-height: 1.7; max-width: 480px; margin: 14px auto 0; }
+        .why-h2 { font-family: 'Cormorant Garamond', serif; font-size: 48px; color: var(--maroon); margin-top: 10px; margin-bottom: 0; }
+        .why-h2 span { font-style: italic; color: var(--burgundy); }
+        .why-subtitle { font-family: 'DM Sans', sans-serif; font-size: 15px; color: var(--gray-600); line-height: 1.7; max-width: 480px; margin: 14px auto 0; }
         .why-divider { display: flex; justify-content: center; align-items: center; margin: 36px auto 56px; gap: 8px; }
         
         .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
         
-        .why-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(140,118,77,0.2); border-radius: 16px; padding: 32px 28px; position: relative; overflow: hidden; transition: all 0.3s ease; }
-        .why-card:hover { background: rgba(140,118,77,0.06); border-color: rgba(140,118,77,0.5); transform: translateY(-4px); }
+        .why-card { background: var(--white); border: 1px solid var(--border); box-shadow: var(--shadow-sm); border-radius: 16px; padding: 32px 28px; position: relative; overflow: hidden; transition: all 0.3s ease; }
+        .why-card:hover { background: var(--white); border-color: var(--burgundy); box-shadow: var(--shadow-md); transform: translateY(-4px); }
         .why-accent { position: absolute; top: 0; left: 0; width: 40px; height: 3px; background: linear-gradient(to right, #B12E33, #8C764D); border-radius: 0 0 3px 0; }
         
         .why-icon { width: 52px; height: 52px; border-radius: 12px; background: rgba(140,118,77,0.1); border: 1px solid rgba(140,118,77,0.2); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
-        .why-card-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: #FDF6EC; font-weight: 600; margin-bottom: 10px; margin-top: 0; }
-        .why-card-body { font-family: 'DM Sans', sans-serif; font-size: 14px; color: #8A7A6A; line-height: 1.75; margin: 0; }
+        .why-card-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--maroon); font-weight: 600; margin-bottom: 10px; margin-top: 0; }
+        .why-card-body { font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--gray-500); line-height: 1.75; margin: 0; }
         
         @media (max-width: 992px) { .why-grid { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 768px) { .why-grid { grid-template-columns: 1fr; } .why-section { padding: 60px 24px; } }
 
-        .bottom-stats { margin-top: 56px; padding: 28px 40px; background: rgba(140,118,77,0.08); border: 1px solid rgba(140,118,77,0.2); border-radius: 16px; display: flex; justify-content: space-around; align-items: center; }
+        .bottom-stats { margin-top: 56px; padding: 28px 40px; background: var(--white); border: 1px solid var(--border); box-shadow: var(--shadow-sm); border-radius: 16px; display: flex; justify-content: space-around; align-items: center; }
         .stat-item { text-align: center; }
         .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 42px; color: #E8A000; line-height: 1; margin-bottom: 4px; }
         .stat-label { font-family: 'DM Sans', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #6A5A3A; }
@@ -330,7 +330,7 @@
                 <!-- Product 1 -->
                 <div class="product-card-new reveal filter-item" data-category="japa-bags">
                     <div class="product-card-img-area" style="background: linear-gradient(135deg, #F5EDD8, #E8D4A8)">
-                        <img src="https://images.unsplash.com/photo-1602192509154-0b900ee1f851?w=500&q=80" alt="Japa Bag" loading="lazy">
+                        <img src="assets/products/japa_bag_1782017108810.png" alt="Japa Bag" loading="lazy">
                         <div class="prod-badge badge-bestseller">BESTSELLER</div>
                         <div class="wishlist-btn" onclick="toggleWishlist(this)">
                             <svg viewBox="0 0 24 24" fill="none" stroke="#B12E33" stroke-width="2" width="14" height="14"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
@@ -360,7 +360,7 @@
                 <!-- Product 2 -->
                 <div class="product-card-new reveal filter-item" data-category="gopi-dresses">
                     <div class="product-card-img-area" style="background: linear-gradient(135deg, #EEE8F5, #D4C8E8)">
-                        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&q=80" alt="Gopi Dress" loading="lazy">
+                        <img src="assets/products/gopi_dress_1782017122827.png" alt="Gopi Dress" loading="lazy">
                         <div class="prod-badge badge-new">NEW</div>
                         <div class="wishlist-btn" onclick="toggleWishlist(this)"><svg viewBox="0 0 24 24" fill="none" stroke="#B12E33" stroke-width="2" width="14" height="14"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
                         <div class="quick-add" onclick="showToast('Added to Cart ✓')">✦ Quick Add to Cart</div>
@@ -388,7 +388,7 @@
                 <!-- Product 3 -->
                 <div class="product-card-new reveal filter-item" data-category="kurtas">
                     <div class="product-card-img-area" style="background: linear-gradient(135deg, #FFF0D8, #F5D8A8)">
-                        <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500&q=80" alt="Kurta" loading="lazy">
+                        <img src="assets/products/kurta_saffron_1782017136227.png" alt="Kurta" loading="lazy">
                         <div class="prod-badge badge-sale">SALE</div>
                         <div class="wishlist-btn" onclick="toggleWishlist(this)"><svg viewBox="0 0 24 24" fill="none" stroke="#B12E33" stroke-width="2" width="14" height="14"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
                         <div class="quick-add" onclick="showToast('Added to Cart ✓')">✦ Quick Add to Cart</div>
@@ -418,7 +418,7 @@
                 <!-- Product 4 -->
                 <div class="product-card-new reveal filter-item" data-category="altar">
                     <div class="product-card-img-area" style="background: linear-gradient(135deg, #F5EDD8, #D4B87A)">
-                        <img src="https://images.unsplash.com/photo-1545126913-c89e6a8d1b63?w=500&q=80" alt="Deity" loading="lazy">
+                        <img src="assets/products/deity_brass_1782017148885.png" alt="Deity" loading="lazy">
                         <div class="wishlist-btn" onclick="toggleWishlist(this)"><svg viewBox="0 0 24 24" fill="none" stroke="#B12E33" stroke-width="2" width="14" height="14"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
                         <div class="quick-add" onclick="showToast('Added to Cart ✓')">✦ Quick Add to Cart</div>
                     </div>
@@ -445,7 +445,7 @@
                 <!-- Product 5 -->
                 <div class="product-card-new reveal filter-item" data-category="malas">
                     <div class="product-card-img-area" style="background: linear-gradient(135deg, #E8F5E8, #B8D8B8)">
-                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=80" alt="Mala" loading="lazy">
+                        <img src="assets/products/tulsi_mala_1782017179378.png" alt="Mala" loading="lazy">
                         <div class="prod-badge badge-bestseller">BESTSELLER</div>
                         <div class="wishlist-btn" onclick="toggleWishlist(this)"><svg viewBox="0 0 24 24" fill="none" stroke="#B12E33" stroke-width="2" width="14" height="14"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
                         <div class="quick-add" onclick="showToast('Added to Cart ✓')">✦ Quick Add to Cart</div>
@@ -475,7 +475,7 @@
                 <!-- Product 6 -->
                 <div class="product-card-new reveal filter-item" data-category="books">
                     <div class="product-card-img-area" style="background: linear-gradient(135deg, #F5F0E8, #E8D8C0)">
-                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500&q=80" alt="Book" loading="lazy">
+                        <img src="assets/products/bhagavad_gita_1782017191650.png" alt="Book" loading="lazy">
                         <div class="wishlist-btn" onclick="toggleWishlist(this)"><svg viewBox="0 0 24 24" fill="none" stroke="#B12E33" stroke-width="2" width="14" height="14"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
                         <div class="quick-add" onclick="showToast('Added to Cart ✓')">✦ Quick Add to Cart</div>
                     </div>
@@ -502,7 +502,7 @@
                 <!-- Product 7 -->
                 <div class="product-card-new reveal filter-item" data-category="japa-bags">
                     <div class="product-card-img-area" style="background: linear-gradient(135deg, #F5EDD8, #E0C898)">
-                        <img src="https://images.unsplash.com/photo-1584467735815-f778f274e296?w=500&q=80" alt="Peacock Bag" loading="lazy">
+                        <img src="assets/products/japa_bag_1782017108810.png" alt="Peacock Bag" loading="lazy">
                         <div class="prod-badge badge-new">NEW</div>
                         <div class="wishlist-btn" onclick="toggleWishlist(this)"><svg viewBox="0 0 24 24" fill="none" stroke="#B12E33" stroke-width="2" width="14" height="14"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
                         <div class="quick-add" onclick="showToast('Added to Cart ✓')">✦ Quick Add to Cart</div>
@@ -530,7 +530,7 @@
                 <!-- Product 8 -->
                 <div class="product-card-new reveal filter-item" data-category="altar">
                     <div class="product-card-img-area" style="background: linear-gradient(135deg, #F5EDD8, #C8A860)">
-                        <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?w=500&q=80" alt="Puja Thali" loading="lazy">
+                        <img src="assets/products/puja_thali_1782017217737.png" alt="Puja Thali" loading="lazy">
                         <div class="wishlist-btn" onclick="toggleWishlist(this)"><svg viewBox="0 0 24 24" fill="none" stroke="#B12E33" stroke-width="2" width="14" height="14"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
                         <div class="quick-add" onclick="showToast('Added to Cart ✓')">✦ Quick Add to Cart</div>
                     </div>
