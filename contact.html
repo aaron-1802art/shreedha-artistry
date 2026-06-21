@@ -18,17 +18,16 @@
 </head>
 <body>
 
-    <!-- TOP BAR -->
+    <!-- TOP ANNOUNCEMENT BAR -->
     <div class="top-bar">
-        ✦ HANDCRAFTED IN MAYAPUR ✦ SACRED ITEMS FOR YOUR SPIRITUAL JOURNEY ✦ AUTHENTIC TULASI & DEITY ITEMS ✦ MADE WITH DEVOTION ✦ FREE SHIPPING ✦
+        Handcrafted devotional artistry from Vrindavan
     </div>
 
     <!-- MAIN HEADER -->
     <header class="header">
         <div class="container header-inner">
-            <a href="index.html" class="header-logo">
-                Shreedha Artistry
-                <small>Connecting Hearts, Preserving Traditions</small>
+            <a href="index.html" class="header-logo" style="display:flex; align-items:center;">
+                <img src="assets/logo.png" alt="Shreedha Artistry Logo" class="brand-logo">
             </a>
             
             <div class="search-bar">
@@ -52,15 +51,28 @@
 
     <!-- SECONDARY NAV -->
     <nav class="secondary-nav">
-        <button class="browse-btn" onclick="location.href='shop.html'">
-            ☰ Browse Categories ⌄
-        </button>
+        <div class="category-dropdown">
+            <button class="browse-btn" onclick="location.href='shop.html'">
+                ☰ Browse Categories ⌄
+            </button>
+            <div class="dropdown-menu">
+                <a href="shop.html">Japa Bags</a>
+                <a href="shop.html">Gopi Dresses</a>
+                <a href="shop.html">Kurtas</a>
+                <a href="shop.html">Altar & Deities</a>
+                <a href="shop.html">Kanthimala</a>
+                <a href="shop.html">Spiritual Books</a>
+                <a href="shop.html">Pendants</a>
+                <a href="shop.html">Sarees</a>
+                <a href="shop.html">Musical Instruments</a>
+            </div>
+        </div>
         <div class="secondary-links">
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="shop.html">Shop</a>
             <a href="about.html">About Us</a>
             <a href="privacy.html">Privacy Policy</a>
-            <a href="contact.html" class="active">Live Chat</a>
+            <a href="contact.html">Live Chat</a>
         </div>
     </nav>
 
