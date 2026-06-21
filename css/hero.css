@@ -317,3 +317,26 @@
         height: auto;
     }
 }
+
+@media (max-width: 768px) {
+    .luxury-hero-container {
+        flex-direction: column !important;
+        height: auto !important;
+    }
+    .hero-side-panel {
+        width: 100% !important;
+        height: 400px !important;
+        padding: 40px 20px !important;
+    }
+    .hero-side-panel.left-side-panel {
+        height: 50vh !important;
+        min-height: 400px;
+    }
+    .hero-side-panel.right-side-panel {
+        height: 50vh !important;
+        min-height: 400px;
+    }
+    .hero-h1 {
+        font-size: 42px !important;
+    }
+}

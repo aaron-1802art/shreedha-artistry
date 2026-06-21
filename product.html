@@ -291,6 +291,19 @@
             .product-container { flex-direction: column; }
             .main-image-container { height: 400px; }
         }
+    
+        @media (max-width: 992px) {
+            .product-container { flex-direction: column; padding: 24px; gap: 40px; }
+            .main-image-container { height: 400px; }
+        }
+        @media (max-width: 768px) {
+            .product-page-wrapper { padding: 40px 16px; }
+            .product-title { font-size: 32px; }
+            .product-price { font-size: 28px; }
+            .main-image-container { height: 300px; }
+            .actions-row { flex-direction: column; }
+        }
+
     </style>
 
     <main class="product-page-wrapper">
