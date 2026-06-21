@@ -1058,23 +1058,7 @@
     .header-actions button {
         padding: 0 8px !important;
     }
-    .header-actions button.header-icon {
-        font-size: 0 !important; /* Hide text, override inline styles */
-        padding: 0 10px !important;
-        width: 40px !important;
-        height: 40px !important;
-        border-radius: 50% !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-    .header-actions button.header-icon::first-letter {
-        font-size: 16px !important; /* Keep emoji */
-    }
-    .header-actions button.header-icon::before {
-        font-size: 16px;
-    }
-    /* We keep emojis for now, but hide text */
+    /* Proper hide mobile rule takes care of text now, so icons remain visible */
     
     /* Footer */
     .footer-grid {
@@ -1098,6 +1082,9 @@
         width: 40px !important;
         padding: 0 !important;
         justify-content: center !important;
+    }
+    .header-actions .header-icon:not(.login-btn):not(.header-cart) {
+        display: none !important;
     }
 }
 .login-btn, .header-cart {
