@@ -1059,7 +1059,17 @@
         padding: 0 8px !important;
     }
     .header-actions button.header-icon {
-        font-size: 0; /* Hide text */
+        font-size: 0 !important; /* Hide text, override inline styles */
+        padding: 0 10px !important;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .header-actions button.header-icon::first-letter {
+        font-size: 16px !important; /* Keep emoji */
     }
     .header-actions button.header-icon::before {
         font-size: 16px;
@@ -1075,10 +1085,27 @@
         padding: 60px 24px 30px;
     }
     .category-dropdown .dropdown-menu {
-        width: 100%;
-        position: static;
-        box-shadow: none;
-        border: none;
-        background: transparent;
+        /* Removed position: static to fix the massive blank space bug on mobile */
     }
+}
+
+@media (max-width: 768px) {
+    .hide-mobile {
+        display: none !important;
+    }
+    .login-btn, .header-cart {
+        border-radius: 50% !important;
+        width: 40px !important;
+        padding: 0 !important;
+        justify-content: center !important;
+    }
+}
+.login-btn, .header-cart {
+    border-radius: 20px; 
+    width: auto; 
+    padding: 0 15px; 
+    font-size:14px; 
+    gap:8px;
+    display: flex;
+    align-items: center;
 }
