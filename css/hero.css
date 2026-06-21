@@ -4,17 +4,17 @@
     height: 620px;
     display: flex;
     flex-direction: row;
-    background: radial-gradient(ellipse at center, #2A0C0C 0%, #1C0808 40%, #0D0404 100%);
+    background: radial-gradient(ellipse at center, #FFFDFB 0%, #FBF8F3 40%, #F6F0E6 100%);
     overflow: hidden;
     position: relative;
-    background-color: #1C0A0A; /* Fallback deep background */
+    background-color: #FBF8F3; /* Fallback deep background */
 }
 
 /* Left Panel */
 .left-side-panel {
     width: 27%;
     height: 100%;
-    background: linear-gradient(to right, #0D0404, #1A0808);
+    background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +27,7 @@
 .right-side-panel {
     width: 27%;
     height: 100%;
-    background: linear-gradient(to left, #0D0404, #1A0808);
+    background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +43,7 @@
     border-radius: 16px;
     overflow: hidden;
     border: 1px solid rgba(140, 118, 77, 0.5);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 0 4px rgba(140, 118, 77, 0.1);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1), 0 0 0 4px rgba(140, 118, 77, 0.1);
     position: relative;
 }
 
@@ -65,7 +65,7 @@
     left: 0;
     right: 0;
     height: 80px;
-    background: linear-gradient(to top, rgba(28, 8, 8, 0.9), transparent);
+    background: linear-gradient(to top, rgba(251, 248, 243, 0.95), transparent);
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -75,7 +75,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-size: 13px;
-    color: #C9A87A;
+    color: #4A1F26;
     text-align: center;
     padding-bottom: 12px;
 }
@@ -93,7 +93,7 @@
     font-size: 11px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #6A5A3A;
+    color: #6B6260;
 }
 
 /* Center Panel */
@@ -152,9 +152,9 @@
     line-height: 1.05;
 }
 
-.h1-line1 { font-size: 56px; color: #E8A000; }
-.h1-line2 { font-size: 56px; color: #FDF6EC; }
-.h1-line3 { font-size: 56px; color: #E8A000; font-style: italic; }
+.h1-line1 { font-size: 56px; color: #4A1F26; }
+.h1-line2 { font-size: 56px; color: #1A1412; }
+.h1-line3 { font-size: 56px; color: #4A1F26; font-style: italic; }
 
 .hero-decorative-divider {
     display: flex;
@@ -171,7 +171,7 @@
 }
 
 .divider-star {
-    color: #E8A000;
+    color: #4A1F26;
     font-size: 14px;
     margin: 0 8px;
 }
@@ -179,7 +179,7 @@
 .hero-body-paragraph {
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
-    color: #B8A888;
+    color: #554C4A;
     line-height: 1.8;
     text-align: center;
     max-width: 300px;
@@ -197,7 +197,7 @@
 .hero-cta-btn1 {
     padding: 13px 28px;
     background: #B12E33;
-    color: #FDF6EC;
+    color: #FBF8F3;
     border: none;
     border-radius: 8px;
     font-family: 'DM Sans', sans-serif;
@@ -248,13 +248,13 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    color: #E8A000;
+    color: #4A1F26;
 }
 
 .trust-bottom {
     font-family: 'DM Sans', sans-serif;
     font-size: 10px;
-    color: #6A5A3A;
+    color: #6B6260;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -262,7 +262,7 @@
 .trust-divider {
     width: 1px;
     height: 28px;
-    background-color: #3A2A1A;
+    background-color: rgba(74,31,38,0.2);
 }
 
 /* GOLD SCROLLING STRIP (Marquee) */
@@ -283,7 +283,7 @@
     font-size: 11px;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: #FDF6EC;
+    color: #FBF8F3;
 }
 
 @keyframes marquee {
