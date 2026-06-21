@@ -1,5 +1,8 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   build: {
@@ -11,7 +14,8 @@ export default defineConfig({
         privacy: resolve(__dirname, 'privacy.html'),
         refunds: resolve(__dirname, 'refunds.html'),
         shipping: resolve(__dirname, 'shipping.html'),
-        terms: resolve(__dirname, 'terms.html')
+        terms: resolve(__dirname, 'terms.html'),
+        shop: resolve(__dirname, 'shop.html')
       }
     }
   }

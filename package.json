@@ -1,6 +1,7 @@
 {
   "name": "shreedha-artistry",
   "version": "1.0.0",
+  "type": "module",
   "description": "Shreedha Artistry static website",
   "scripts": {
     "dev": "vite",
